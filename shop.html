@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dog-club shop</title>
+    <link rel="stylesheet" href="./scss/main.min.css" />
+  </head>
+  <body>
+    <header class="header shop-section__header" id="shop">
+      <div class="container">
+        <div class="header__container">
+          <a href="/">
+            <img src="./images/logo.svg" alt="logo dog-club" />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="index.html#walk-section">Less talk</a>
+              </li>
+              <li>
+                <a class="link" href="index.html#service-section"
+                  >Services category</a
+                >
+              </li>
+              <li>
+                <a class="link" href="index.html#customer-section"
+                  >Happy customer</a
+                >
+              </li>
+              <li>
+                <a class="link" href="index.html#contact-section">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__shops-icon" type="button">
+            <svg class="header__shop-width" width="40" height="40">
+              <a href="shop.html#shop">
+                <use href="./images/icons.svg#icon-shops"></use>
+              </a>
+            </svg>
+          </button>
+          <button class="header__button button modal-btn-open" type="button">
+            Contact us
+          </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button
+              class="header__close mobile-menu__btn-close menu-btn-close"
+              type="button"
+            >
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-close"></use>
+              </svg>
+            </button>
+            <a href="/">
+              <img
+                class="mobile-menu__logo"
+                src="./images/logo.svg"
+                alt="logo dog-club"
+              />
+            </a>
+            <ul class="mobile-menu__menu">
+              <li>
+                <a class="mobile-menu__link" href="index.html#walk-section"
+                  >Less talk</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="index.html#service-section"
+                  >Services category</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="index.html#customer-section"
+                  >Happy customer</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="index.html#contact-section"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="mobile-menu__icons">
+              <a href="#">
+                <svg class="mobile-menu__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="mobile-menu__icon" width="30" height="30">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="nutriction-section sections">
+        <div class="nutriction-section__container">
+          <div class="nutriction-section__shop-content">
+            <h1 class="nutriction-section__title">Nutrition</h1>
+            <div class="nutriction-section__burger-menu">
+              <button
+                class="nutriction-section__shop-burger shop-menu-btn-open"
+                type="button"
+              >
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-shop-menu"></use>
+                </svg>
+              </button>
+              <p class="nutriction-section__burger-text">Popularity</p>
+            </div>
+          </div>
+          <div>
+            <nav class="nutriction-section__nav">
+              <ul class="nutriction-section__menu">
+                <li>
+                  <p class="nutriction-section__text">Sorting:</p>
+                </li>
+                <li>
+                  <button class="nutriction-section__button">Popularity</button>
+                </li>
+                <li>
+                  <button class="nutriction-section__button">
+                    Cheaper first
+                  </button>
+                </li>
+                <li>
+                  <button class="nutriction-section__button">
+                    More expensive first
+                  </button>
+                </li>
+                <li>
+                  <button class="nutriction-section__button">By name</button>
+                </li>
+                <li>
+                  <button class="nutriction-section__button">
+                    New ones first
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="shop-section sections">
+        <div class="shop-section__container">
+          <ul class="shop-section__list">
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/dog-black-and-white.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of average breeds Savory 3 kg (turkey and
+                  lamb)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button
+                  class="shop-card__button shop-modal-btn-open"
+                  type="button"
+                >
+                  Buy
+                </button>
+              </article>
+            </li>
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/cute-dog.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of small breeds Savory 3 kg (lamb)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button class="shop-card__button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/brown-dog.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button class="shop-card__button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/brown-dog.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button class="shop-card__button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/cute-dog.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of small breeds Savory 3 kg (lamb)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button class="shop-card__button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/brown-dog.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button class="shop-card__button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/dog-black-and-white.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of average breeds Savory 3 kg (turkey and
+                  lamb)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button class="shop-card__button" type="button">Buy</button>
+              </article>
+            </li>
+            <li class="shop-section__item">
+              <article class="shop-card">
+                <img
+                  class="shop-card__image"
+                  src="./images/brown-dog.png"
+                  alt="food for dog"
+                />
+                <p class="shop-card__vendor">Vendor code: 37875</p>
+                <p class="shop-card__text">
+                  Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)
+                </p>
+                <p class="shop-card__price">
+                  136.00$ <span class="shop-card__accent">320.43$</span>
+                </p>
+                <button class="shop-card__button" type="button">Buy</button>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="pagination-shops">
+          <button class="pagination-shops__carousel-button next">
+            <svg width="14" height="14">
+              <use href="./images/icons.svg#icon-shop-arrow"></use>
+            </svg>
+          </button>
+          <ul class="pagination-shop">
+            <li class="pagination-shop__button">1</li>
+            <li class="pagination-shop__button">2</li>
+            <li class="pagination-shop__button">3</li>
+            <li class="pagination-shop__button">4</li>
+            <li class="pagination-shop__button">5</li>
+            <li class="pagination-shop__button">6</li>
+            <li class="pagination-shop__button">7</li>
+            <li class="pagination-shop__button">8</li>
+            <li class="pagination-shop__button">...</li>
+          </ul>
+          <button class="pagination-shops__carousel-button prev">
+            <svg width="14" height="14">
+              <use href="./images/icons.svg#icon-shop-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <address>
+            <a href="/">
+              <img
+                class="footer__log"
+                src="./images/logo.svg"
+                alt="logo dog-club"
+              />
+            </a>
+            <div class="footer__address-icons">
+              <a href="#">
+                <svg class="footer__address-icon" width="34" height="34">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__address-icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+          </address>
+          <nav>
+            <ul>
+              <li>
+                <a class="footer__link link" href="index.html#walk-section"
+                  >Less talk</a
+                >
+              </li>
+              <li>
+                <a class="footer__link link" href="index.html#service-section"
+                  >Services category</a
+                >
+              </li>
+              <li>
+                <a class="footer__link link" href="index.html#customer-section"
+                  >Happy customer</a
+                >
+              </li>
+              <li>
+                <a class="footer__link link" href="index.html#contact-section"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__nav-icons">
+            <a href="#">
+              <svg class="footer__address-icon" width="34" height="34">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer__address-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__form-container">
+            <form>
+              <div class="footer__form-field">
+                <label
+                  class="footer__form-label visually-hidden"
+                  for="users-email"
+                  >Your email</label
+                >
+                <svg class="footer__icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-symbol"></use>
+                </svg>
+                <input
+                  class="footer__form-input"
+                  type="email"
+                  name="user-email"
+                  id="users-email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <div class="footer__form-field">
+                <label class="foote__-form-label visually-hidden" for="user-cmc"
+                  >Your cmc</label
+                >
+                <input
+                  class="footer__form-input"
+                  type="text"
+                  name="user-cmc"
+                  id="user-cmc"
+                  placeholder="Your cmc"
+                />
+              </div>
+              <div class="footer__form-field">
+                <button class="footer__button button">Contact us</button>
+              </div>
+              <div class="form-checkbox">
+                <input
+                  class="input-checkbox"
+                  type="checkbox"
+                  id="use-checkbox"
+                  required
+                />
+                <label class="label-checkbox" for="use-checkbox">
+                  <svg class="icon-checkbox" width="8px" height="8px">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </label>
+                <span class="checkbox-text">I agree to the privacy policy</span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__img">
+          <img class="footer__dog" src="./images/footer-dog.png" alt="dog" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button
+          class="modal__icon-close modal-btn-close modal__btn-close"
+          type="button"
+        >
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title sections__title sections__title--centered">
+          Our experts will take care of your friend
+        </h2>
+        <p class="modal__text">Fill out the form so we can contact you!</p>
+        <form class="modal__form" autocomplete="off">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="use-name"
+              >Your name</label
+            >
+            <svg class="contact-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-people"></use>
+            </svg>
+            <input
+              class="input__control"
+              type="text"
+              name="user-name"
+              id="use-name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="pets-name"
+              >Pet name</label
+            >
+            <svg class="contact-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-pet"></use>
+            </svg>
+            <input
+              class="input__control"
+              type="text"
+              name="pet-name"
+              id="pets-name"
+              placeholder="Pet name"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="use-tel"
+              >Your phone</label
+            >
+            <svg class="contact-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input
+              class="input__control"
+              type="tel"
+              name="user-tel"
+              id="use-tel"
+              pattern="^\+[0-9]{12}"
+              placeholder="Your phone"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="use-email"
+              >Your email</label
+            ><svg class="contact-section__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-symbol"></use>
+            </svg>
+            <input
+              class="input__control"
+              type="email"
+              name="user-email"
+              id="use-email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="modal__form-field">
+            <button class="modal__button button">Contact us</button>
+          </div>
+          <div class="form-checkbox">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              id="users-checkbox"
+              required
+            />
+            <label class="label-checkbox" for="users-checkbox">
+              <svg class="icon-checkbox" width="8px" height="8px">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </label>
+            <span class="checkbox-text">I agree to the privacy policy</span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="shop-menu-backdrop is-hidden">
+      <div class="shop-menu-mobile">
+        <button
+          class="shop-menu-mobile__icon-close shop-menu-mobile__btn-close shop-menu-btn-close"
+        >
+          <svg width="14" height="14">
+            <use href="./images/icons.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="shop-menu-mobile__title">Sorting</h3>
+        <ul class="shop-menu-mobile__menu">
+          <li><a class="link" href="#">Popularity</a></li>
+          <li><a class="link" href="#">Cheaper first</a></li>
+          <li><a class="link" href="#">More expensive first</a></li>
+          <li><a class="link" href="#">By name</a></li>
+          <li><a class="link" href="#">New one first</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/shop-menu.js"></script>
+    <script src="./js/modal-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

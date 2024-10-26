@@ -1,0 +1,102 @@
+.service-section {
+  position: relative;
+  background-image: url('../images/service-background.png');
+  background-repeat: repeat;
+  background-position: left right;
+  background-size: cover;
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    z-index: -1;
+  }
+
+  &::after {
+    top: -180px;
+    right: 300px;
+    width: 97px;
+    height: 97px;
+    background-image: url('../images/top-paw.png');
+  }
+
+  &::before {
+    bottom: -60px;
+    left: 60px;
+    width: 72px;
+    height: 72px;
+    background-image: url('../images/customer-paw-small.png');
+  }
+
+  &__slider {
+    gap: 12px;
+  }
+
+  &__card-container {
+    overflow: hidden;
+    margin-bottom: 24px;
+    gap: 20px;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 32px 0 48px 0;
+    }
+  }
+
+  &__arrow {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: -10px;
+      right: 40px;
+      fill: var(--color-primary-light);
+    }
+  }
+
+  &__title {
+    padding-top: 30px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 32px 0 48px;
+    }
+  }
+
+  &__button-arrow {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: relative;
+      bottom: 0;
+      justify-content: flex-end;
+      align-items: right;
+    }
+  }
+
+  &__text {
+    color: var(--color-primary-light);
+  }
+
+  &__carousel-button-arrow {
+    width: 40px;
+    height: 5px;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
+    cursor: pointer;
+  }
+}

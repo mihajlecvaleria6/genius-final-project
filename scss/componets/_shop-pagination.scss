@@ -1,0 +1,42 @@
+.pagination-shops {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__carousel-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &.next {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.pagination-shop {
+  &__button {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 2px 4px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 4px 8px;
+      width: 32px;
+      height: 24px;
+    }
+
+    &:hover {
+      color: var(--color-brand);
+      background-color: var(--color-primary-light);
+      border-radius: 2px;
+    }
+  }
+}

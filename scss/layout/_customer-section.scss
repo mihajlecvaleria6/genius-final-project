@@ -1,0 +1,65 @@
+.customer-section {
+  position: relative;
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    z-index: -1;
+  }
+
+  &::after {
+    top: 50px;
+    right: 10px;
+    width: 97px;
+    height: 97px;
+    background-image: url('../images/customer-paw-right.png');
+  }
+
+  &::before {
+    bottom: -100px;
+    left: 0;
+    width: 127px;
+    height: 262px;
+    background-image: url('../images/customer-paw-large.png');
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    place-self: center;
+  }
+}

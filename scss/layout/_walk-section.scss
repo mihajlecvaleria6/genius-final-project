@@ -1,0 +1,104 @@
+.walk-section {
+  position: relative;
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    content: '';
+  }
+
+  &::after {
+    top: 130px;
+    left: 0;
+    width: 80px;
+    height: 120px;
+    background-image: url('../images/paw-walk-left.png');
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 266px;
+    background-image: url('../images/large-paw.png');
+  }
+
+  &__image-container {
+    position: relative;
+  }
+
+  &__dog {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__icon-food {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      bottom: 50px;
+      right: 240px;
+      fill: var(--color-secondary-gray);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding-top: 8px;
+  }
+
+  &__contant {
+    justify-content: space-between;
+  }
+
+  &__text {
+    letter-spacing: 5%;
+    font-size: 16px;
+    line-height: 1.3;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 22px;
+      line-height: 1.5;
+      letter-spacing: 0;
+    }
+  }
+
+  &__arrow {
+    display: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 180px;
+      fill: var(--color-primary-light);
+      width: 48px;
+      height: 40px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__video {
+    display: block;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

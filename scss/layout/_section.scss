@@ -1,0 +1,22 @@
+.sections {
+  padding: 0 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 0 92px 0 100px;
+  }
+
+  &__title {
+    font-family: 'Rowdies', sans-serif;
+    font-size: 32px;
+    line-height: 1.1;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 56px;
+      line-height: 1.2;
+    }
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}

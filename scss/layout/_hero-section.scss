@@ -1,0 +1,128 @@
+.hero-section {
+  position: relative;
+  background-image: url('../images/hero-background.png');
+  background-repeat: no-repeat;
+  background-position: left right;
+  background-size: cover;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 97px;
+    height: 97px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    background-image: url('../images/hero-paw.png');
+  }
+
+  &::after {
+    z-index: -1;
+    top: -50px;
+    right: 600px;
+    background-image: url('../images/hero-paw-center.png');
+    transform: rotate(-80deg);
+  }
+
+  &__container {
+    position: relative;
+    padding: 34px 0 40px 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 212px 0 236px 0;
+    }
+
+    &__container::after {
+      position: absolute;
+      bottom: -60px;
+      left: 80px;
+      width: 97px;
+      height: 97px;
+      background-image: url('../images/paw-dawn.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    max-width: 304px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0;
+      text-align: left;
+      max-width: 635px;
+    }
+  }
+
+  &__title {
+    padding-top: 70px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: #000000;
+    font-family: 'Rowdies', sans-serif;
+    line-height: 1.2;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 30px;
+      margin-bottom: 40px;
+      font-size: 72px;
+    }
+  }
+
+  &__text {
+    max-width: 296px;
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 500px;
+      margin-bottom: 24px;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+  }
+
+  &__img {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      right: 40px;
+      bottom: 25px;
+    }
+  }
+
+  &__elements {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      right: -30px;
+      bottom: 120px;
+    }
+  }
+
+  &__mobile-elements {
+    position: relative;
+    top: -110px;
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

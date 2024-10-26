@@ -1,0 +1,16 @@
+.carousel-button-shop {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &.prev {
+    transform: rotate(-180deg);
+  }
+}

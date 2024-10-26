@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  padding: 16px 20px 0px;
+  position: absolute;
+  z-index: 2;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-grow: 1;
+      gap: 48px;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__shops-icon {
+    display: block;
+    margin-right: 16px;
+    fill: var(--color-primary-light);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-right: 24px;
+    }
+  }
+
+  &__shop-width {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__burger {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-light);
+    background-color: transparent;
+    border: none;
+    margin-left: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__close {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-light);
+    border: none;
+    background-color: transparent;
+  }
+}

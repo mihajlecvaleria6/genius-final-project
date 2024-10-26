@@ -1,0 +1,30 @@
+.button {
+  font-size: 16px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: var(--color-brand);
+  background-color: var(--color-primary-light);
+  border: none;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 32px 16px 32px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+}
+
+.button:hover {
+  background-color: var(--color-secondary-orange);
+}
+
+.mobile-button {
+  display: block;
+  margin: 0 auto;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
